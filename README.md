@@ -2,12 +2,17 @@
 
 This list is an attempt to answer the question _"What's the maximum length of (some) string?"_ for as many strings as possible.
 
+## Hex RGB(A) colors
+
+`7` for RGB, `9` for RGBA.
+
+Easily determined: 2 bytes for each color channel, plus 1 byte for the `#` character.
 
 ## Linux file paths
 
 Arbitrarily long.
 
-There are [`PATH_MAX` and `NAME_MAX`](https://stackoverflow.com/questions/3325602/what-is-the-relation-between-path-max-and-name-max-and-how-do-i-obtain), but both are problematic. See, for example, the articles [PATH_MAX is tricky](https://eklitzke.org/path-max-is-tricky) and [PATH_MAX simply isn't](http://insanecoding.blogspot.com/2007/11/pathmax-simply-isnt.html).
+There are [`PATH_MAX` and `NAME_MAX`](https://www.gnu.org/software/libc/manual/html_node/Limits-for-Files.html), but both are problematic. See, for example, the articles [PATH_MAX is tricky](https://eklitzke.org/path-max-is-tricky) and [PATH_MAX simply isn't](http://insanecoding.blogspot.com/2007/11/pathmax-simply-isnt.html).
 
 ## XLogical Font Description
 
@@ -19,7 +24,7 @@ There are [`PATH_MAX` and `NAME_MAX`](https://stackoverflow.com/questions/332560
 
 ## IRC messages
 
-`512` plus `8191` for tags.
+`512` for the message plus `8191` for tags.
 
 According to [RFC 2812](https://tools.ietf.org/html/rfc2812#section-2.3), an IRC message (that is, the actual chat message plus meta data, like prefix and parameters) is limited to `512` bytes, which includes the `\r\n`, leaving `510` bytes for the message. With IRC v3, an IRC message can additionally contain [tags](https://ircv3.net/specs/extensions/message-tags.html#size-limit), which can use up to `8191` bytes.
 
