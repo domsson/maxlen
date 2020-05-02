@@ -36,6 +36,12 @@ According to [RFC-2812](https://tools.ietf.org/html/rfc2812#section-2.3), an IRC
 
 See [this Wikipedia article](https://en.wikipedia.org/wiki/Domain_Name_System#cite_ref-rfc1034_1-2) or [RFC-1034](https://tools.ietf.org/html/rfc1034).
 
+## E-Mail addresses
+
+- `254`
+
+See [this detailed Stack Overflow answer](https://stackoverflow.com/a/574698/3316645) for background information, including why the limit is not 320, as often stated.
+
 ## MIME type
 
 - `255`
