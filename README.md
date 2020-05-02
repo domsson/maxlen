@@ -12,7 +12,7 @@ There is [`PATH_MAX`](https://www.gnu.org/software/libc/manual/html_node/Limits-
 
 - `255`
 
-For most file systems, anyway. See [`NAME_MAX`](https://www.gnu.org/software/libc/manual/html_node/Limits-for-Files.html) and the [Wikipedia article on file system comparion](https://en.wikipedia.org/wiki/Comparison_of_file_systems#Limits).
+For most file systems, anyway. See [`NAME_MAX`](https://www.gnu.org/software/libc/manual/html_node/Limits-for-Files.html) and the [Wikipedia article on file system comparison](https://en.wikipedia.org/wiki/Comparison_of_file_systems#Limits).
 
 ## XLogical Font Description
 
@@ -41,6 +41,13 @@ See [this Wikipedia article](https://en.wikipedia.org/wiki/Domain_Name_System#ci
 - `255`
 
 That's 127 for the type, 1 for the slash and another 127 for the subtype, according to [RFC-4288](http://tools.ietf.org/html/rfc4288#section-4.2). Note, however, that the more recent [RFC-6838](http://tools.ietf.org/html/rfc6838#section-4.2) states that both type and subtype _should_ not exceed 64 characters each.
+
+## IP addresses
+
+- `15` for IPv4
+- `45` for IPv6
+
+See [this Stack Overflow question](https://stackoverflow.com/questions/166132/maximum-length-of-the-textual-representation-of-an-ipv6-address) for IPv6; see [`INET_ADDRSTRLEN` and `INET6_ADDRSTRLEN`](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/netinet_in.h.html) for both, IPv4 and IPv6.
 
 ## YouTube video ID
 
