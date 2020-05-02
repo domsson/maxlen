@@ -1,7 +1,6 @@
 # maxlen
 
-This list is an attempt to answer the question _"What's the maximum string length for ...?"_ for as many strings as possible. Note that all numerical values are in bytes (not characters), unless stated otherwise.
-
+This list is an attempt to answer the question _"What's the maximum string length for ...?"_ for as many strings as possible. Note that all numerical values are in bytes (not characters), unless stated otherwise. Also note that many of these numbers can be subject to change; don't hold me responsible if your software breaks. 
 
 ## Linux file paths
 
@@ -28,7 +27,7 @@ For most file systems, anyway. See [`NAME_MAX`](https://www.gnu.org/software/lib
 - `512` for the message
 - `8191` for tags
 
-According to [RFC-2812](https://tools.ietf.org/html/rfc2812#section-2.3), an IRC message (that is, the actual chat message plus meta data, like prefix and parameters) is limited to `512` bytes, which includes the `\r\n`, leaving `510` bytes for the message. With IRC v3, an IRC message can additionally contain [tags](https://ircv3.net/specs/extensions/message-tags.html#size-limit), which can use up to `8191` bytes.
+According to [RFC-2812](https://tools.ietf.org/html/rfc2812#section-2.3), an IRC message (that is, the actual chat message plus meta data, like prefix and parameters) is limited to 512 bytes, which includes the `\r\n`, leaving 510 bytes for the message. With IRC v3, an IRC message can additionally contain [tags](https://ircv3.net/specs/extensions/message-tags.html#size-limit), which can use up to 8191 bytes.
 
 ## Domain name labels (subdomain, domain, TLD)
 
@@ -37,12 +36,17 @@ According to [RFC-2812](https://tools.ietf.org/html/rfc2812#section-2.3), an IRC
 
 See [this Wikipedia article](https://en.wikipedia.org/wiki/Domain_Name_System#cite_ref-rfc1034_1-2) or [RFC-1034](https://tools.ietf.org/html/rfc1034).
 
-
 ## MIME type
 
 - `255`
 
 That's 127 for the type, 1 for the slash and another 127 for the subtype, according to [RFC-4288](http://tools.ietf.org/html/rfc4288#section-4.2). Note, however, that the more recent [RFC-6838](http://tools.ietf.org/html/rfc6838#section-4.2) states that both type and subtype _should_ not exceed 64 characters each.
+
+## YouTube video ID
+
+- `11`
+
+According to the answers on [this relevant question on Stack Overflow](https://stackoverflow.com/questions/6180138/whats-the-maximum-length-of-a-youtube-video-id).
 
 ## Twitch user and display names
 
