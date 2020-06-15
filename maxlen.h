@@ -98,6 +98,11 @@
 #define MAXLEN_TWITCH_DISPLAYNAME 25
 
 /*
+ * Minecraft server MOTD.
+ */
+#define MAXLEN_MINECRAFT_MOTD 59
+
+/*
  * Hexadecimal RGB color notations.
  */
 #define MAXLEN_RGB_HEX 7

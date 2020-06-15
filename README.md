@@ -67,6 +67,12 @@ According to the answers on [this relevant question on Stack Overflow](https://s
 
 According to a [reddit post from 2015](https://www.reddit.com/r/Twitch/comments/32w5b2/username_requirements/) and [BarryCarlyon](https://discuss.dev.twitch.tv/t/max-length-for-user-names-and-display-names/21315), both the user names (nicks) and display names on Twitch can not exceed 25 characters.
 
+## Minecraft Server MOTD (message of the day)
+
+- `59`
+
+According to the [Gamepedia Minecraft Wiki](https://minecraft.gamepedia.com/Server.properties).
+
 ## Hex RGB(A) colors
 
 - `7` for RGB
